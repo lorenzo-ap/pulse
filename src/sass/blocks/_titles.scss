@@ -6,4 +6,11 @@
   text-align: center;
   text-transform: uppercase;
   color: #0d0d0d;
+  &_left {
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: left;
+    color: #ffffff;
+  }
 }
