@@ -5,7 +5,8 @@ const slider = tns({
   autoplay: false,
   navPosition: 'bottom',
   navAsThumbnails: true,
-  controls: false
+  controls: false,
+  speed: 700
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
