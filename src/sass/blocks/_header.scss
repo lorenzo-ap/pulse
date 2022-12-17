@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   &__logo {
     width: 250px;
     img {
@@ -9,6 +10,9 @@
     }
   }
   &__official {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 12px;
     font-weight: 500;
     line-height: 1;
