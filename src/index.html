@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pulse</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/tiny-slider.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -103,5 +105,27 @@
         </form>
       </div>
     </section>
+    <!-- Carousel -->
+    <section class="carousel">
+      <div class="container">
+        <div class="carousel__inner">
+          <div>
+            <img src="img/slide_1.jpg" alt="Slide-1" />
+          </div>
+          <div>
+            <img src="img/slide_2.jpg" alt="Slide 2" />
+          </div>
+          <div>
+            <img src="img/slide_3.jpg" alt="Slide 3" />
+          </div>
+        </div>
+        <button type="button" class="prev"><img src="icons/left.svg" /></button>
+        <button type="button" class="next"><img src="icons/right.svg" /></button>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
