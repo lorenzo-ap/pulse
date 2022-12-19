@@ -46,6 +46,28 @@
       max-width: 500px;
     }
   }
+  .footer {
+    &__info {
+      width: 340px;
+      height: 180px;
+      padding: 25px 0;
+    }
+    &__address {
+      font-size: 18px;
+    }
+    &__phone {
+      font-size: 18px;
+    }
+    &__social {
+      &-item {
+        width: 40px;
+        height: 40px;
+        img {
+          height: 18px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -225,6 +247,28 @@
       font-size: 15px;
     }
   }
+  .footer {
+    &__info {
+      width: 300px;
+      height: 160px;
+      padding: 20px 0;
+    }
+    &__address {
+      font-size: 16px;
+    }
+    &__phone {
+      font-size: 16px;
+    }
+    &__social {
+      &-item {
+        width: 36px;
+        height: 36px;
+        img {
+          height: 18px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 350px) {
@@ -294,6 +338,18 @@
       hr {
         margin-top: auto;
       }
+    }
+  }
+  .footer {
+    &__info {
+      width: 260px;
+      height: 150px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__address,
+    &__phone {
+      font-size: 14px;
     }
   }
 }
