@@ -1,0 +1,35 @@
+.feed {
+  padding-bottom: 50px;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+  }
+  &__img {
+    width: 169px;
+    height: 169px;
+    margin-right: 60px;
+    border-radius: 50%;
+  }
+  &__name {
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: #0d0d0d;
+  }
+  &__marathons {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #646464;
+  }
+  &__desc {
+    max-width: 700px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}

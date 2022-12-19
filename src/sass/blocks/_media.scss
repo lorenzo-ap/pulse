@@ -38,6 +38,14 @@
   .carousel {
     padding: 50px 0;
   }
+  .feed {
+    &__img {
+      margin-right: 30px;
+    }
+    &__desc {
+      max-width: 500px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -90,6 +98,21 @@
     }
     &__content {
       margin-top: 40px;
+    }
+  }
+  .feed {
+    &__item {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      text-align: center;
+    }
+    &__img {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    &__desc {
+      line-height: 21px;
     }
   }
 }
@@ -189,6 +212,17 @@
     }
     &-item {
       margin: 10px 0;
+    }
+  }
+  .feed {
+    padding-bottom: 40px;
+    &__img {
+      width: 140px;
+      height: 140px;
+    }
+    &__desc {
+      padding: 0 20px;
+      font-size: 15px;
     }
   }
 }
