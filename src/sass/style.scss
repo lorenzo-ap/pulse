@@ -1,5 +1,3 @@
-@import "base/variables";
-
 body {
   font-family: "Museo Sans Cyrl", sans-serif;
 }
@@ -10,6 +8,7 @@ body {
   margin: 0 auto;
 }
 
+@import "base/variables";
 @import "blocks/buttons";
 @import "blocks/titles";
 @import "blocks/promo";
