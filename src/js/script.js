@@ -43,14 +43,28 @@ $(document).ready(function () {
   $('[data-modal=consultation]').on('click', function () {
     $('.overlay, #consultation').fadeIn(400);
   });
+
   $('.button_small').each(function (i) {
     $(this).on('click', function () {
       $('#order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
       $('.overlay, #order').fadeIn(400);
     })
   });
+
   $('.modal__close').on('click', function () {
     $('.overlay, #consultation, #thanks, #order').fadeOut(400);
+  });
+
+  $(window).on('click', function (e) {
+    if (e.target.classList.contains('overlay')) {
+      $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    }
+  });
+
+  $(document).keyup(function (e) {
+    if (e.keyCode === 27) {   // esc
+      $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    }
   });
 
   // Forms
