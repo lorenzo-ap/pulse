@@ -269,6 +269,30 @@
       }
     }
   }
+  .overlay {
+    .modal {
+      min-width: auto;
+      width: 80%;
+      padding: 30px 20px 30px;
+      &__subtitle {
+        font-size: 17px;
+      }
+      &__desc {
+        font-size: 12px;
+      }
+      &__close {
+        top: -4px;
+        right: 5px;
+        font-size: 36px;
+      }
+      .feed-form_modal {
+        width: 90%;
+        .button_submit {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 350px) {
@@ -302,9 +326,14 @@
       margin-top: 30px;
     }
   }
+  .overlay {
+    .modal {
+      width: 90%;
+    }
+  }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 315px) {
   .button {
     &_main {
       width: 250px;

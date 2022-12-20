@@ -1,3 +1,4 @@
+// Slider
 const slider = tns({
   container: '.carousel__inner',
   items: 1,
@@ -17,6 +18,7 @@ document.querySelector('.next').addEventListener('click', function () {
   slider.goTo('next');
 });
 
+// Tabs
 $(document).ready(function () {
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
     $(this)
@@ -36,4 +38,18 @@ $(document).ready(function () {
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
+
+  // Modal
+  $('[data-modal=consultation]').on('click', function () {
+    $('.overlay, #consultation').fadeIn(400);
+  });
+  $('.button_small').each(function (i) {
+    $(this).on('click', function () {
+      $('#order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn(400);
+    })
+  });
+  $('.modal__close').on('click', function () {
+    $('.overlay, #consultation, #thanks, #order').fadeOut(400);
+  });
 });
