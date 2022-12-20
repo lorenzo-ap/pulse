@@ -293,6 +293,11 @@
       }
     }
   }
+  .modal {
+    label.error {
+      font-size: 12px;
+    }
+  }
 }
 
 @media (max-width: 350px) {
@@ -329,6 +334,11 @@
   .overlay {
     .modal {
       width: 90%;
+      .feed-form_modal {
+        .button_submit {
+          font-size: 12px;
+        }
+      }
     }
   }
 }

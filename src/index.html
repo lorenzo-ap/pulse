@@ -97,7 +97,7 @@
         <h2 class="title title_left">Получите бесплатную консультацию<br />по подбору пульсометра</h2>
         <div class="consultation__desc">Просто заполните форму заявки<br />и мы перезвоним вам в течении 10 минут</div>
         <!-- Form -->
-        <form class="feed-form" action="#!">
+        <form class="feed-form" id="consultation-form" action="#!">
           <input name="name" type="text" placeholder="Ваше имя" required />
           <input name="phone" type="tel" placeholder="Ваш телефон" required />
           <input name="email" type="email" placeholder="Ваш E-mail" required />
@@ -487,9 +487,9 @@
         <div class="modal__subtitle">Просто заполните форму заявки</div>
         <div class="modal__desc">и мы перезвоним вам в течении 10 минут</div>
         <form class="feed-form feed-form_modal" action="#!">
-          <input name="name" type="text" placeholder="Ваше имя" required />
-          <input name="phone" type="tel" placeholder="Ваш телефон" required />
-          <input name="email" type="email" placeholder="Ваш E-mail" required />
+          <input name="name" type="text" placeholder="Ваше имя" />
+          <input name="phone" type="tel" placeholder="Ваш телефон" />
+          <input name="email" type="email" placeholder="Ваш E-mail" />
           <button class="button button_submit">заказать консультацию</button>
         </form>
       </div>
@@ -516,6 +516,7 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/tiny-slider.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

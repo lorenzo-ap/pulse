@@ -45,6 +45,17 @@
       line-height: 1.5;
     }
   }
+  input.error {
+    outline: 1px solid red;
+  }
+  input.valid {
+    outline: 1px solid green;
+  }
+  label.error {
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 #consultation,
