@@ -67,7 +67,7 @@ $(document).ready(function () {
     }
   });
 
-  // Forms
+  // Validate
   function validateForms(form) {
     $(form).validate({
       rules: {
@@ -98,4 +98,11 @@ $(document).ready(function () {
   validateForms('#consultation-form');
   validateForms('#consultation form');
   validateForms('#order form');
+
+  // Mask
+  $('input[name=phone]').mask("+7 (999) 999-9999").on('click', function () {
+    if ($(this).val() === '+7 (___) ___-____') {
+      $(this).get(0).setSelectionRange(4, 4);
+    }
+  });
 });
