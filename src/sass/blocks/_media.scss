@@ -352,33 +352,6 @@
   .feed-form {
     width: 250px;
   }
-  .catalog {
-    &-item {
-      display: flex;
-      flex-direction: column;
-      min-height: 490px;
-      &__wrapper {
-        width: calc(200% + 100px);
-      }
-      &__content {
-        &_active {
-          margin-right: 90px;
-        }
-      }
-      &__back {
-        bottom: -20px;
-        transform: translateX(calc(-50% - 22px));
-      }
-      &__list {
-        margin-left: 0;
-        padding-left: 10px;
-        padding-right: 50px;
-      }
-      hr {
-        margin-top: auto;
-      }
-    }
-  }
   .footer {
     &__info {
       width: 260px;

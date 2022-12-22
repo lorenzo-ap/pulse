@@ -10,8 +10,11 @@ $(document).ready(function () {
     $(item).each(function (i) {
       $(this).on('click', function (e) {
         e.preventDefault();
-        $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-        $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+        if (item === '.catalog-item__link') {
+          $('.catalog-item__list').eq(i).addClass('catalog-item__list_active');
+        } else if (item === '.catalog-item__back') {
+          $('.catalog-item__list').eq(i).removeClass('catalog-item__list_active');
+        }
       })
     });
   };
