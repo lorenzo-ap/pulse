@@ -1,25 +1,5 @@
-// Slider
-const slider = tns({
-  container: '.carousel__inner',
-  items: 1,
-  slideBy: 'page',
-  autoplay: false,
-  navPosition: 'bottom',
-  navAsThumbnails: true,
-  controls: false,
-  speed: 700
-});
-
-document.querySelector('.prev').addEventListener('click', function () {
-  slider.goTo('prev');
-});
-
-document.querySelector('.next').addEventListener('click', function () {
-  slider.goTo('next');
-});
-
-// Tabs
 $(document).ready(function () {
+  // Tabs
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
     $(this)
       .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
@@ -100,9 +80,29 @@ $(document).ready(function () {
   validateForms('#order form');
 
   // Mask
-  $('input[name=phone]').mask("+7 (999) 999-9999").on('click', function () {
-    if ($(this).val() === '+7 (___) ___-____') {
+  $('input[name=phone]').mask("+7 (999) 999-99-99").on('click', function () {
+    if ($(this).val() === '+7 (___) ___-__-__') {
       $(this).get(0).setSelectionRange(4, 4);
     }
   });
+});
+
+// Slider
+const slider = tns({
+  container: '.carousel__inner',
+  items: 1,
+  slideBy: 'page',
+  autoplay: false,
+  navPosition: 'bottom',
+  navAsThumbnails: true,
+  controls: false,
+  speed: 700
+});
+
+document.querySelector('.prev').addEventListener('click', function () {
+  slider.goTo('prev');
+});
+
+document.querySelector('.next').addEventListener('click', function () {
+  slider.goTo('next');
 });
