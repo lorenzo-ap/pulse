@@ -1,3 +1,4 @@
+// jQuery
 $(document).ready(function () {
   // Tabs
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
@@ -11,9 +12,9 @@ $(document).ready(function () {
       $(this).on('click', function (e) {
         e.preventDefault();
         if (item === '.catalog-item__link') {
-          $('.catalog-item__list').eq(i).addClass('catalog-item__list_active');
+          $('.catalog-item__about').eq(i).addClass('catalog-item__about_active');
         } else if (item === '.catalog-item__back') {
-          $('.catalog-item__list').eq(i).removeClass('catalog-item__list_active');
+          $('.catalog-item__about').eq(i).removeClass('catalog-item__about_active');
         }
       })
     });
