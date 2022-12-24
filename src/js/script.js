@@ -88,6 +88,15 @@ $(document).ready(function () {
       $(this).get(0).setSelectionRange(4, 4);
     }
   });
+
+  // Page-up
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $('.page-up').fadeIn();
+    } else {
+      $('.page-up').fadeOut();
+    }
+  });
 });
 
 // Slider
